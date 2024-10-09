@@ -30,7 +30,15 @@ pwn.college{cfksmTTO8957V5OKuHZiky5tg3R.dRjM4QDL3ITN0czW}
 ```
 ## Section 5: Mixing globs
 ```
+hacker@globbing~mixing-globs:~$ cd /challenge/files/
+hacker@globbing~mixing-globs:/challenge/files$ /challenge/run [ecp]*
+You got it! Here is your flag!
+pwn.college{styAssB7EzcOHlvGo-0j_ZAJ7DY.dVjM4QDL3ITN0czW}
 ```
 ## Section 6: Exclusionary globbing 
 ```
+hacker@globbing~exclusionary-globbing:~$ cd /challenge/files/
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]*
+You got it! Here is your flag!
+pwn.college{0cbEsnrQt2VzEg-ibXxUA4r8L5E.dZjM4QDL3ITN0czW}
 ```
