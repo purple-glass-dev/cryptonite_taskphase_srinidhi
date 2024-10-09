@@ -139,5 +139,12 @@ pwn.college{0cd9RSdFz6OJ5Eg8iKASKScUKsk.dBzN1QDL3ITN0czW}
 
 ## Section 6: Grepping stored results
 ```
+hacker@piping~grepping-stored-results:~$ /challenge/run > /tmp/data.txt
+hacker@piping~grepping-stored-results:~$ cat /tmp/data.txt
+hacker@piping~grepping-stored-results:~$ grep 'pwn.college' /tmp/data.txt
+pwn.college{IbyYXyQLpFZtbBZmIlyGVzwaX3_.dhTM4QDL3ITN0czW}
+```
+## Section 7: Grepping live output
+```
 
 ```
