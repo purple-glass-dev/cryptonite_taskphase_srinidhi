@@ -154,6 +154,7 @@ pwn.college{sOgbr7OYC9l_PKOHIeEotMpCCqN.dFzM4QDL3ITN0czW}
 ## Section 11: Finding files
 ```
 
+
 ```
 ## Section 12: Linking Files
 ```
