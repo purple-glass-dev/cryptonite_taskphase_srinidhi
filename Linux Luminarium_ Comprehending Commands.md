@@ -157,4 +157,9 @@ pwn.college{sOgbr7OYC9l_PKOHIeEotMpCCqN.dFzM4QDL3ITN0czW}
 ```
 ## Section 12: Linking Files
 ```
+hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+ln: failed to create symbolic link '/home/hacker/not-the-flag': File exists
+hacker@commands~linking-files:~$ /challenge/catflag
+About to read out the /home/hacker/not-the-flag file!
+pwn.college{scyZ4RAbsarL6iz8mfeWEV4U4X5.dlTM1UDL3ITN0czW}
 ```
