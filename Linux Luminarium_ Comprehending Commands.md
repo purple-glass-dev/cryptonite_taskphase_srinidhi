@@ -56,7 +56,91 @@ pwn.college{IL-ui9zHMCGcaAPret9_UqHn_4z.dZTOwUDL3ITN0czW}
 ```
 
 ## Section 8: Hidden files
+```
+hacker@commands~hidden-files:~$ cd /
+hacker@commands~hidden-files:/$ ls -a
+.           .flag-21199982310851  challenge  home   lib64   mnt  proc  sbin  tmp
+..          bin                   dev        lib    libx32  nix  root  srv   usr
+.dockerenv  boot                  etc        lib32  media   opt  run   sys   var
+hacker@commands~hidden-files:/$ cat .flag-21199982310851
+pwn.college{8mMhxN6JJozTSYa8lZoeAHY5nW8.dBTN4QDL3ITN0czW}
+```
 ## Section 9: An epic filesystem quest
+```
+hacker@commands~an-epic-filesystem-quest:~$ cd /
+hacker@commands~an-epic-filesystem-quest:/$ ls
+BLUEPRINT  boot       dev  flag  lib    lib64   media  nix  proc  run   srv  tmp  var
+bin        challenge  etc  home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~an-epic-filesystem-quest:/$ cat BLUEPRINT
+Tubular find!
+The next clue is in: /usr/share/racket/pkgs/racket-doc/scribblings/scheme/compiled
+
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+hacker@commands~an-epic-filesystem-quest:/$ cd /usr/share/racket/pkgs/racket-doc/scribblings/scheme/compiled
+hacker@commands~an-epic-filesystem-quest:/usr/share/racket/pkgs/racket-doc/scribblings/scheme/compiled$ ls
+WHISPER  compat_scrbl.dep  compat_scrbl.zo  info_rkt.dep  info_rkt.zo  scheme_scrbl.dep  scheme_scrbl.zo
+hacker@commands~an-epic-filesystem-quest:/usr/share/racket/pkgs/racket-doc/scribblings/scheme/compiled$ cat WHISPER
+Lucky listing!
+The next clue is in: /usr/share/X11/locale/el_GR.UTF-8
+hacker@commands~an-epic-filesystem-quest:/usr/share/racket/pkgs/racket-doc/scribblings/scheme/compiled$ cd /usr/share/X11/locale/el_GR.UTF-8
+hacker@commands~an-epic-filesystem-quest:/usr/share/X11/locale/el_GR.UTF-8$ ls
+Compose  POINTER  XI18N_OBJS  XLC_LOCALE
+hacker@commands~an-epic-filesystem-quest:/usr/share/X11/locale/el_GR.UTF-8$ cat POINTER
+Congratulations, you found the clue!
+The next clue is in: /opt/linux/linux-5.4/include/linux/phy
+
+Watch out! The next clue is **trapped**. You'll need to read it out without 'cd'ing into the directory; otherwise, the clue will self destruct!
+hacker@commands~an-epic-filesystem-quest:/usr/share/X11/locale/el_GR.UTF-8$ ls /opt/linux/linux-5.4/include/linux/phy
+TEASER-TRAPPED  omap_control_phy.h  omap_usb.h  phy-mipi-dphy.h  phy-sun4i-usb.h  phy.h  tegra  ulpi_phy.h
+hacker@commands~an-epic-filesystem-quest:/usr/share/X11/locale/el_GR.UTF-8$ cat TEASER-TRAPPED
+cat: TEASER-TRAPPED: No such file or directory
+hacker@commands~an-epic-filesystem-quest:/usr/share/X11/locale/el_GR.UTF-8$ cat /opt/linux/linux-5.4/include/linux/phy/TEASER-TRAPPED
+Congratulations, you found the clue!
+The next clue is in: /usr/share/seabios/optionrom
+hacker@commands~an-epic-filesystem-quest:/usr/share/X11/locale/el_GR.UTF-8$ cd /usr/share/seabios/optionrom
+hacker@commands~an-epic-filesystem-quest:/usr/share/seabios/optionrom$ ls
+SNIPPET  extboot.bin  kvmvapic.bin  linuxboot.bin  multiboot.bin  vapic.bin
+hacker@commands~an-epic-filesystem-quest:/usr/share/seabios/optionrom$ cat SNIPPET
+Great sleuthing!
+The next clue is in: /usr/lib/x86_64-linux-gnu/ruby/2.7.0/enc/trans
+
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/usr/share/seabios/optionrom$ cd /usr/lib/x86_64-linux-gnu/ruby/2.7.0/enc/trans
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/ruby/2.7.0/enc/trans$ ls -a
+.         big5.so     ebcdic.so              emoji_sjis_docomo.so    escape.so   iso2022.so       japanese_sjis.so  transdb.so
+..        cesu_8.so   emoji.so               emoji_sjis_kddi.so      gb18030.so  japanese.so      korean.so         utf8_mac.so
+.DOSSIER  chinese.so  emoji_iso2022_kddi.so  emoji_sjis_softbank.so  gbk.so      japanese_euc.so  single_byte.so    utf_16_32.so
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/ruby/2.7.0/enc/trans$ cat .DOSSIER
+Lucky listing!
+The next clue is in: /usr/lib/debug/.build-id/1d
+hacker@commands~an-epic-filesystem-quest:/usr/lib/x86_64-linux-gnu/ruby/2.7.0/enc/trans$ cd /usr/lib/debug/.build-id/1d
+hacker@commands~an-epic-filesystem-quest:/usr/lib/debug/.build-id/1d$ ls
+43538e9bec024560d22d0c5f65a7fa043c77f6.debug  4c2fb9e0ffcfcae03642c0d6964b3fe5045d0c.debug  EVIDENCE
+43cc4e650e97607e7d8f00c0945b716a0fcc8e.debug  96833980a019bc1e045e78e5cdacc77e46ef80.debug  d30df7b02168ad5433d5586568317f7dc7b8ab.debug
+hacker@commands~an-epic-filesystem-quest:/usr/lib/debug/.build-id/1d$ cat EVIDENCE
+Tubular find!
+The next clue is in: /usr/lib/python3/dist-packages/sympy/integrals/rubi/rubi_tests/tests/__pycache__
+hacker@commands~an-epic-filesystem-quest:/usr/lib/debug/.build-id/1d$ cd  /usr/lib/python3/dist-packages/sympy/integrals/rubi/rubi_tests/tests/__pycache__
+hacker@commands~an-epic-filesystem-quest:/usr/lib/python3/dist-packages/sympy/integrals/rubi/rubi_tests/tests/__pycache__$ ls
+BRIEF                            test_hyperbolic_sine.cpython-38.pyc          test_sine.cpython-38.pyc
+__init__.cpython-38.pyc          test_inverse_hyperbolic_sine.cpython-38.pyc  test_special_functions.cpython-38.pyc
+test_1_2.cpython-38.pyc          test_inverse_sine.cpython-38.pyc             test_tangent.cpython-38.pyc
+test_1_3.cpython-38.pyc          test_logarithms.cpython-38.pyc               test_trinomials.cpython-38.pyc
+test_1_4.cpython-38.pyc          test_miscellaneous_algebra.cpython-38.pyc
+test_exponential.cpython-38.pyc  test_secant.cpython-38.pyc
+hacker@commands~an-epic-filesystem-quest:/usr/lib/python3/dist-packages/sympy/integrals/rubi/rubi_tests/tests/__pycache__$ cat BRIEF
+Congratulations, you found the clue!
+The next clue is in: /usr/lib/debug/.build-id/dd
+
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+hacker@commands~an-epic-filesystem-quest:/usr/lib/python3/dist-packages/sympy/integrals/rubi/rubi_tests/tests/__pycache__$ cd /usr/lib/debug/.build-id/dd
+hacker@commands~an-epic-filesystem-quest:/usr/lib/debug/.build-id/dd$ ls -a
+.  ..  .CUE  429eff2603e552a4d1af5e99fc6292ab86c3f8.debug
+hacker@commands~an-epic-filesystem-quest:/usr/lib/debug/.build-id/dd$ cat .CUE
+CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
+It is: pwn.college{M18YPLfm6I9ZC2rHZqjSwxsdU4N.dljM4QDL3ITN0czW}
+hacker@commands~an-epic-filesystem-quest:/usr/lib/debug/.build-id/dd$
+```
 ## Section 10: Making directories 
 ```
 hacker@commands~making-directories:~$ mkdir /tmp/pwn
@@ -70,4 +154,7 @@ pwn.college{sOgbr7OYC9l_PKOHIeEotMpCCqN.dFzM4QDL3ITN0czW}
 ## Section 11: Finding files
 ```
 
+```
+## Section 12: Linking Files
+```
 ```
