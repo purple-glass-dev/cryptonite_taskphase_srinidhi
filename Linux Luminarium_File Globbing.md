@@ -24,7 +24,9 @@ pwn.college{QA-Rw21s_BEDAb3AX2tc77RQfpc.dNjM4QDL3ITN0czW}
 ```
 ## Section 4: Matching paths with []
 ```
-
+hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[bash]
+You got it! Here is your flag!
+pwn.college{cfksmTTO8957V5OKuHZiky5tg3R.dRjM4QDL3ITN0czW}
 ```
 ## Section 5: Mixing globs
 ```
