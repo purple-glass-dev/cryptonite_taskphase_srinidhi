@@ -32,7 +32,7 @@ Invoking 'win'....
 pwn.college{Q5Vcvrp7ecVP8IRBU3mOuzbiKCE.dZzNyUDL3ITN0czW}
 ```
 
-## Section 4: 
+## Section 4: Hijacking commands
 ```
 hacker@path~hijacking-commands:~$ touch rm
 hacker@path~hijacking-commands:~$ vi rm
