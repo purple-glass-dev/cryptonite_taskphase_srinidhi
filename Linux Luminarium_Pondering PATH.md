@@ -23,9 +23,22 @@ pwn.college{gTz6WUBCFOxN_2dFavSMt1aSWfS.dVzNyUDL3ITN0czW}
 
 ## Section 3: Adding commands
 ```
-
+hacker@path~adding-commands:~$ touch win
+hacker@path~adding-commands:~$ vi win
+hacker@path~adding-commands:~$ chmod u+x win
+hacker@path~adding-commands:~$ PATH=~/
+hacker@path~adding-commands:~$ /challenge/run
+Invoking 'win'....
+pwn.college{Q5Vcvrp7ecVP8IRBU3mOuzbiKCE.dZzNyUDL3ITN0czW}
 ```
 
 ## Section 4: 
 ```
+hacker@path~hijacking-commands:~$ touch rm
+hacker@path~hijacking-commands:~$ vi rm
+hacker@path~hijacking-commands:~$ chmod o+x rm
+hacker@path~hijacking-commands:~$ PATH=./
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+pwn.college{M_0S4Kizm6IiVonYLWx65huOMcT.ddzNyUDL3ITN0czW}
 ```
