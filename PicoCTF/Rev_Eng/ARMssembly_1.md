@@ -7,17 +7,17 @@ Like ARMassembly0, this program is also written in assembly language
 	.global	func
 	.type	func, %function
 func:
-	sub	sp, sp, #32
-	str	w0, [sp, 12]
-	mov	w0, 68
-	str	w0, [sp, 16]
-	mov	w0, 2
-	str	w0, [sp, 20]
-	mov	w0, 3
-	str	w0, [sp, 24]
-	ldr	w0, [sp, 20]
-	ldr	w1, [sp, 16]
-	lsl	w0, w1, w0
+	sub	sp, sp, #32 ; subracting 
+	str	w0, [sp, 12] ; storing w0 in [sp,12]
+	mov	w0, 68 ;moving the value 68 to w0
+	str	w0, [sp, 16] ; storing w0=68 in [sp,16]
+	mov	w0, 2 ; moving 2 to w0
+	str	w0, [sp, 20] ; storing w0=2 in [sp,20]
+	mov	w0, 3 ; moving 3 to w0
+	str	w0, [sp, 24] ; storing w0=3 in [sp,24]
+	ldr	w0, [sp, 20] ;w0=2
+	ldr	w1, [sp, 16] ;w1=68
+	lsl	w0, w1, w0 
 	str	w0, [sp, 28]
 	ldr	w1, [sp, 28]
 	ldr	w0, [sp, 24]
