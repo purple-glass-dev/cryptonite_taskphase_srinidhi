@@ -1,15 +1,15 @@
 The code given to us is in this challenge is a assembly file
 ```
-  .arch armv8-a  #This line tell us that this challenge is a64-bit ARMassembly file
-	.file	"chall.c" # This line indicates that the creator of the challenge wrote this in C language
+  .arch armv8-a  ;This line tell us that this challenge is a64-bit ARMassembly file
+	.file	"chall.c" ;This line indicates that the creator of the challenge wrote this in C language
 	.text
 	.align	2
 	.global	func1
 	.type	func1, %function
 func1:
 	sub	sp, sp, #16 
-	str	w0, [sp, 12] # storing w0 into the stack ;argv[1]
-	str	w1, [sp, 8] # storing w1 into the stack ;argv[2]
+	str	w0, [sp, 12] ;storing w0 into the stack ;argv[1]
+	str	w1, [sp, 8] ;storing w1 into the stack ;argv[2]
 	ldr	w1, [sp, 12] ;w1=argv[1]
 	ldr	w0, [sp, 8] ; w0=argv[2]
 	cmp	w1, w0 ; comparing the two registers 
@@ -38,8 +38,8 @@ main:
 	str	x19, [sp, 16]
 	str	w0, [x29, 44]
 	str	x1, [x29, 32]
-	ldr	x0, [x29, 32] #|ldr| = LoaD Register [x29,32] to 'x0' 
-	add	x0, x0, 8 # adding the number '8'[Specifcally no. 8 becase the width of 64 bit ] to 'x0'
+	ldr	x0, [x29, 32] ;|ldr| = LoaD Register [x29,32] to 'x0' 
+	add	x0, x0, 8 ;adding the number '8'[Specifcally no. 8 becase the width of 64 bit ] to 'x0'
 	ldr	x0, [x0]
 	bl	atoi #atoi-- converts string to integer
 	mov	w19, w0
