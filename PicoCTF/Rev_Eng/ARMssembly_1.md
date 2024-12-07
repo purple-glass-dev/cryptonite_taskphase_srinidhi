@@ -73,4 +73,18 @@ main:
 	.section	.note.GNU-stack,"",@progbits
 
 ```
+So in terminal I first imported python3, to get this
+
+```
+Python 3.12.6 (main, Sep  6 2024, 19:03:47) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+Showing that I already have it installed on my system. Next to retrieve my hexcode, I wanted to use the hex() function which is inbuilt
+```
+```
+>>> hex(4112417903)
+'0xf51e846f'
+Since the quetion requires me to remove the '0x', my flag will be of the format picoCTF{f51e846f}
+```
+
+The flag : picoCTF{f51e846f}
 
