@@ -17,19 +17,19 @@ func:
 	str	w0, [sp, 24] ; storing w0=3 in [sp,24]
 	ldr	w0, [sp, 20] ;w0=2
 	ldr	w1, [sp, 16] ;w1=68
-	lsl	w0, w1, w0 
-	str	w0, [sp, 28]
-	ldr	w1, [sp, 28]
-	ldr	w0, [sp, 24]
-	sdiv	w0, w1, w0
-	str	w0, [sp, 28]
-	ldr	w1, [sp, 28]
-	ldr	w0, [sp, 12]
-	sub	w0, w1, w0
-	str	w0, [sp, 28]
-	ldr	w0, [sp, 28]
-	add	sp, sp, 32
-	ret
+	lsl	w0, w1, w0 ; shifts the number 68(bin=1000100) by 2 bits(new number : 68*4 = 272), and the new value is stored in w0=272
+	str	w0, [sp, 28] ;storing w0=272 in [sp,28]
+	ldr	w1, [sp, 28] ;w1=272
+	ldr	w0, [sp, 24] ;w0=3
+	sdiv	w0, w1, w0 ; w0 = 272/3 = 90
+	str	w0, [sp, 28] ; storing 90 in [sp,28]
+	ldr	w1, [sp, 28] ; w1= 90
+	ldr	w0, [sp, 12] ;w0=68
+	sub	w0, w1, w0 ; w0=w1-w0 = 90-68 =22
+	str	w0, [sp, 28] ; storing 23 in [sp,28]
+	ldr	w0, [sp, 28] ; w0=22
+	add	sp, sp, 32 
+	ret 
 	.size	func, .-func
 	.section	.rodata
 	.align	3
@@ -45,23 +45,23 @@ func:
 main:
 	stp	x29, x30, [sp, -48]!
 	add	x29, sp, 0
-	str	w0, [x29, 28]
-	str	x1, [x29, 16]
-	ldr	x0, [x29, 16]
-	add	x0, x0, 8
-	ldr	x0, [x0]
-	bl	atoi
-	str	w0, [x29, 44]
-	ldr	w0, [x29, 44]
-	bl	func
-	cmp	w0, 0
-	bne	.L4 ; |bne| = Branch if Not Equal
+	str	w0, [x29, 28] ; storing 22 in [x29,28]
+	str	x1, [x29, 16] ; storing x1 in [x29,16]
+	ldr	x0, [x29, 16] ; x0=x1
+	add	x0, x0, 8 ; x0 = (x1*256) + (x1*256)
+	ldr	x0, [x0] ; x0= (x1*256) + (x1*256)
+	bl	atoi 
+	str	w0, [x29, 44] ; storing 22 in [x29,44]
+	ldr	w0, [x29, 44] ; w0=22
+	bl	func 
+	cmp	w0, 0 ; 22 and 0 not equal therefore, it keeps going to "You Lose" ; in order for w0=0(from the func; the argument must be 90)
+	bne	.L4 ; |bne| = Branch if Not Equal ; Jumping to L4
 	adrp	x0, .LC0
 	add	x0, x0, :lo12:.LC0
 	bl	puts
 	b	.L6
 .L4:
-	adrp	x0, .LC1
+	adrp	x0, .LC1  
 	add	x0, x0, :lo12:.LC1
 	bl	puts
 .L6:
