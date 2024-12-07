@@ -81,10 +81,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 Showing that I already have it installed on my system. Next to retrieve my hexcode, I wanted to use the hex() function which is inbuilt
 ```
 ```
->>> hex(4112417903)
-'0xf51e846f'
-Since the quetion requires me to remove the '0x', my flag will be of the format picoCTF{f51e846f}
+>>> hex(90)
+'0x5a'
 ```
+Since the quetion requires me to remove the '0x', my flag will be of the format picoCTF{5a}
+To get a 32-bit flag, we will need 8-digits after '0x'
 
-The flag : picoCTF{f51e846f}
+
+The flag : picoCTF{0000005a} 
+
 
