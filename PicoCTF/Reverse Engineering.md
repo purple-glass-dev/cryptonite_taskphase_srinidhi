@@ -82,7 +82,7 @@ Showing that I already have it installed on my system. Next to retrieve my hexco
 '0xf51e846f'
 ```
 Since the quetion requires me to remove the '0x', my flag will be of the format `picoCTF{f51e846f}`
-
+<br/>
 The flag : `picoCTF{f51e846f}`
  ****
 
@@ -176,10 +176,45 @@ Showing that I already have it installed on my system. Next to retrieve my hexco
 ```
 Since the quetion requires me to remove the '0x', my flag will be of the format picoCTF{5a}
 To get a 32-bit flag, we will need 8-digits after '0x'
-
+<br/>
 
 The flag : picoCTF{0000005a} 
 
+****
+
+## GDB Baby step-1
+
+The document given in the challenge was a ELF file which I had to somehow reverse engineer to find the value stored in the EAX register(return value of the main function). 
+<br/> 
+The process started with figuring out how to convert the ELF file into assembly language and I preferred to use Ghidra disassembler to that job.
+<br/> 
+The installation process on my mac was particulary hard, but after getting through the installation which involved >> Installing Ghidra from Github >> Installing the correct JDK. I was able to upload the file into the Ghidra disassembler.
+<br/>
+<br/>
+Work done in terminal :
+
+```
+ ~ % cd Downloads
+ Downloads % cd ghidra
+ ghidra % ./ghidraRun
+```
+<img width="794" alt="Screenshot 2024-12-17 at 5 28 08 PM" src="https://github.com/user-attachments/assets/e933de09-99ec-419a-a8fb-7367b8cebc0b" />
+
+I was given a detailed file, all converted in assembly language, and then did function>>main, to find my flag next to the EAX register.
+
+<img width="1438" alt="Screenshot 2024-12-17 at 5 28 54 PM" src="https://github.com/user-attachments/assets/c7a3907f-84c2-4d2e-ae3b-fe8ef9813051" />
+
+Therefore , 0x86342 is the number I was looking for. Converting from hexadecimal to decimal form --
+```
+ ghidra % python3
+Python 3.13.1 (main, Dec  3 2024, 17:59:52) [Clang 16.0.0 (clang-1600.0.26.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 0x86342
+549698
+```
+The flag : picoCTF{549698}
+
+****
 
 
 
