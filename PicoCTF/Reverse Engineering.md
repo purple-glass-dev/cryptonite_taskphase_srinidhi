@@ -216,6 +216,59 @@ The flag : picoCTF{549698}
 
 ****
 
+## VaultDoor3
+
+My first attempt was to understand what the program was trying to do:
+<img width="1440" alt="Screenshot 2024-12-17 at 8 03 00 PM" src="https://github.com/user-attachments/assets/219fa7df-eba8-4bd0-be50-63fb9674207d" />
+
+<img width="1044" alt="Screenshot 2024-12-17 at 8 03 33 PM" src="https://github.com/user-attachments/assets/80a40503-2884-40fe-90c9-fa42ee45f697" />
+
+So, I understood that the loops are changing the pwd. So I'll give the paramater of the program to the given 32 character string.
+
+```
+public class random{
+    public static void main(String args[]) {
+
+    String password = "jU5t_a_sna_3lpm18gb41_u_4_mfr340";
+    char[] buffer = new char[32]; // creating a character array of size 32
+        int i; // Defining an integer i 
+        for (i=0; i<8; i++) { 
+            buffer[i] = password.charAt(i);
+        }
+        for (; i<16; i++) { 
+            buffer[i] = password.charAt(23-i);
+        }
+        for (; i<32; i+=2) { 
+            buffer[i] = password.charAt(46-i);
+        }
+        for (i=31; i>=17; i-=2) { 
+            buffer[i] = password.charAt(i);
+        }
+        String s = new String(buffer); 
+        System.out.println(s);
+
+    }
+}
+```
+Output:
+```
+srinidhia@srinidhis-mbp Downloads % cd "/Users/srinidhia/Downloads/" && javac random.java && java random
+jU5t_a_s1mpl3_an4gr4m_4_u_1fb380
+```
+
+`jU5t_a_s1mpl3_an4gr4m_4_u_1fb380` is the modified password. 
+
+<br/>
+<br/>
+Trying this password in the ocrrect flag format, I got granted access.
+```
+Enter vault password: picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_1fb380}
+Access granted.
+```
+
+The flag : picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_1fb380}
+
+
 
 
  
