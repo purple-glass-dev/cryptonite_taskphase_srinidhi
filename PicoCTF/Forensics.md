@@ -45,7 +45,7 @@ So, I attempted to decrypt the message of plan file, using the same platform to 
 ```
 I USED THE PROGRAM AND HID IT WITH-DUEDILIGENCE.CHECK OUT THE PHOTOS
 ```
-
+Opening the program.deb file,(deb--Debian linux extension file--Software package format)
 
 
 
