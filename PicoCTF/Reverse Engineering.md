@@ -261,6 +261,7 @@ jU5t_a_s1mpl3_an4gr4m_4_u_1fb380
 <br/>
 <br/>
 Trying this password in the ocrrect flag format, I got granted access.
+
 ```
 Enter vault password: picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_1fb380}
 Access granted.
