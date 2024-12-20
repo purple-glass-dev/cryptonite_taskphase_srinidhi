@@ -131,3 +131,8 @@ I first started by decoding the msg from the text file using the help of the dic
 
 ### Binary Exploitation : Print the gifts
 
+When I opened the folder given in the challenge, I saw a ELF file as the first file in the folder called "chall", so I decided to use Ghidra disassembler to try and get the binary file. Only to get this:
+<img width="1436" alt="Screenshot 2024-12-20 at 12 05 15 PM" src="https://github.com/user-attachments/assets/063a8bdb-3608-43f8-a4b8-1db195d4756c" />
+
+I tried reading through the file but I couldnt find any hints. So I didnt proceed
+
