@@ -102,7 +102,22 @@ The flag : picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
 ## Tunn3l_v1s10n
 
 The first thing I had to do in this challenge is to understand the file type of the particular file given, since it isnt apparent. 
-So with the help of (https://hexed.it), I was able to find out the magic numbers which extract 
+So with the help of (https://hexed.it), I was able to find out the magic numbers which help in knowing the type of file it is.
+
+<img width="1440" alt="Screenshot 2024-12-22 at 3 58 59 PM" src="https://github.com/user-attachments/assets/63ffdd2b-c9ff-43f2-b286-82ec084a6bbd" />
+
+Using (https://en.wikipedia.org/wiki/List_of_file_signatures) , I was able to figure out that given file is a BMP file
+
+<img width="913" alt="Screenshot 2024-12-22 at 4 01 13 PM" src="https://github.com/user-attachments/assets/237705d8-d42c-4849-87cf-b2a1e11811a4" />
+
+So now I renamed the given file, with an extension of .bmp `tunn3l_v1s10n.bmp`
+<br/>
+Next thing I did was to find a txt to bmp converter and landed upon this after a quick google search (https://convertio.co/bmp-jpg/)
+<br/>
+
+Got this;
+
+<img width="1125" alt="Screenshot 2024-12-22 at 4 05 09 PM" src="https://github.com/user-attachments/assets/31080d4b-7fa4-4413-a5b2-9e220acff680" />
 
 
 
