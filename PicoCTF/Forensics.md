@@ -76,9 +76,9 @@ dbc3a8e974ccf7e91da81aca4a5c1605  usr/share/locale/ro/LC_MESSAGES/steghide.mo
 ```
 On some research, I found that md5sum(Message-Digest algorithm 5 hash), is, in simple terms, a digital fingerprint which ensures that none of the data is manipulated during file tranfer.
 <br/>
-Since, I didnt get any useful infornation from md5sum, I next opened "contol" to get this
+Since, I didnt get any useful information from md5sum, I next opened "contol" to get this
 <img width="742" alt="Screenshot 2024-12-19 at 11 59 30 AM" src="https://github.com/user-attachments/assets/2674525d-4e78-430d-9ee4-329a5b2e865b" />
-Reading this further, I noticed that the flag could potentially be ecrypted within one of the three provided images in the challenge.
+Reading this further, I noticed that the flag could potentially be encrypted within one of the three provided images in the challenge.
 <br/>
 And from the clue given about stegnography, I used MacPorts(package manager) to install the steghide library. After doing that, I used the prompts to extract the decoded message, which was stored in a txt file called "flag.txt", cat-ed it to get my final flag
 <br/>
@@ -98,6 +98,13 @@ picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}
 The flag : picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919} 
 
 ****
+
+## Tunn3l_v1s10n
+
+The first thing I had to do in this challenge is to understand the file type of the particular file given, since it isnt apparent. 
+So with the help of (https://hexed.it), I was able to find out the magic numbers which extract 
+
+
 
 
 
