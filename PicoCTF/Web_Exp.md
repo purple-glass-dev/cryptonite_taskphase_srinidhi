@@ -1,2 +1,26 @@
 ## Cookies
 
+When I click on the URL, I'm taken to this page:
+
+
+<img width="1440" alt="Screenshot 2024-12-22 at 7 16 24 PM" src="https://github.com/user-attachments/assets/2cf360c3-8b49-4fe9-a47d-514d1c37fc14" />
+
+I start by seeing how the search bar actually relays messages by inspecting element >> storage
+
+<img width="1440" alt="Screenshot 2024-12-22 at 7 29 45 PM" src="https://github.com/user-attachments/assets/83cdc01f-31ba-4071-b039-c1f9cc5ba527" />
+
+After this, I tried not putting a viable cookie name;
+
+<img width="1440" alt="Screenshot 2024-12-22 at 7 30 58 PM" src="https://github.com/user-attachments/assets/b9d60e4b-8f81-4f7b-bed9-95b6f89a2fea" />
+
+Value =-1
+<br/>
+So I tried, trial and error way to increment the value by 1, until I landed on value =18; I got the flag
+<img width="1440" alt="Screenshot 2024-12-22 at 7 33 22 PM" src="https://github.com/user-attachments/assets/1c165542-1dcf-4a24-b273-f3ae1b09a960" />
+
+
+
+NOTE : AFTER WATCHING MULTIPLE VIDEOS AND RESEARCHING, I HAD TO USE TRIAL AND ERROR. I WANT TO KNOW SHORTER WAYS TO SOLVE THIS.
+<br/>
+<br/>
+The flag : picoCTF{3v3ry1_l0v3s_c00k135_a1f5bdb7}
