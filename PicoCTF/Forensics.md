@@ -12,7 +12,7 @@ The file given in the challenge is in 'PcapNG' format which stands for Packet CA
 
 Now I filtered out the TFTP traffic;
 
-<img width="1440" alt="Screenshot 2024-12-18 at 6 55 34 PM" src="https://github.com/user-attachments/assets/33a49199-ac80-45a9-9560-eea57c9179f6" />
+<img width="1440" alt="Screenshot 2024-12-18 at 6 55 34 PM" src="https://github.com/user-attachments/assets/33a49199-ac80-45a9-9560-eea57c9179f6" /> 
 
 From here, I can variety of informations about the different packets--Some are Acknowledgment, Data packets etc; But what I require is only the information files with which I can find out the flag. So I exported only the TFTP files, like I did below:
 
@@ -119,6 +119,14 @@ Got this;
 
 <img width="1125" alt="Screenshot 2024-12-22 at 4 05 09 PM" src="https://github.com/user-attachments/assets/31080d4b-7fa4-4413-a5b2-9e220acff680" />
 
+Making this change:
+
+<img width="1440" alt="Screenshot 2024-12-22 at 6 58 02 PM" src="https://github.com/user-attachments/assets/dadec010-61b0-4883-ae7e-7ae5dfd50d2a" />
+
+
+The flag : picoCTF{qu1t3_a_v13w_2020}
+
+****
 
 
 
