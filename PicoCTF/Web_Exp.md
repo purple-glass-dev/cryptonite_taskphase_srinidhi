@@ -24,3 +24,30 @@ NOTE : AFTER WATCHING MULTIPLE VIDEOS AND RESEARCHING, I HAD TO USE TRIAL AND ER
 <br/>
 <br/>
 The flag : picoCTF{3v3ry1_l0v3s_c00k135_a1f5bdb7}
+
+## Forbidden Paths
+
+On clicking the link, I got the following page:
+<img width="1440" alt="Screenshot 2024-12-23 at 9 17 05 PM" src="https://github.com/user-attachments/assets/a322785d-8841-4682-b5f4-74cc60fc0e8a" />
+
+Since the challenge said that all the files are residing within (/usr/share/nginx/html/) and is a file belonging to this. 
+<br/>
+
+Trying only flag.txt, did not not give me the flag.
+<br/>
+And since the website is filetering absolute path, I had to use relative path which we know is ../../../../flag.txt (Each ".." representing a directory)
+
+<img width="1440" alt="Screenshot 2024-12-23 at 9 20 30 PM" src="https://github.com/user-attachments/assets/af03a03e-320a-46a8-a8d9-09c3ad09c184" />
+
+I got the flag.
+<br/>
+<br/>
+The flag : picoCTF{7h3_p47h_70_5ucc355_e5a6fcbc}
+
+****
+
+## SOAP
+
+
+
+
