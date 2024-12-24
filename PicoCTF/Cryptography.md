@@ -202,7 +202,7 @@ if __name__ == "__main__":
 
 ```
 
-The flag : picoCTF{custom_d2cr0pt6d_751a22dc}
+The flag : picoCTF{custom_d2cr0pt6d_751a21bc}
 
 NOTE : It's showing incorrect flag for me.
 
