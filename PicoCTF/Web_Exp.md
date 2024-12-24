@@ -52,6 +52,16 @@ The flag : picoCTF{7h3_p47h_70_5ucc355_e5a6fcbc}
 On launching the instance, I got the link for the web portal.
 
 
+<img width="1435" alt="Screenshot 2024-12-24 at 10 38 45 PM" src="https://github.com/user-attachments/assets/0a513677-e369-4472-b1e4-bba94bc5deee" />
+
+<img width="1440" alt="Screenshot 2024-12-24 at 10 55 10 PM" src="https://github.com/user-attachments/assets/43f4f46d-648b-4bcc-acd3-08c8f43c4d3d" />
+
+
+Upon finding the response, I got the flag;
+
+The flag : picoCTF{XML_3xtern@l_3nt1t1ty_55662c16}
+
+
 
 
 
