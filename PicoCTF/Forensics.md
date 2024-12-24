@@ -130,6 +130,24 @@ The flag : picoCTF{qu1t3_a_v13w_2020}
 
 ## m00nwalk
 
+Given was a .wav audio file. From the clues and after some research, I came to conclusion that I had to somehow find a way to convert this .wav file to a image file.
+
+<br/>
+
+My goal was to try and install a sstv decoder but I wasn't able to find any without having to install a linux environment or kali-linux environment. Any online sstv decoder did not yield a useful image. 
+
+<br/>
+<img width="699" alt="Screenshot 2024-12-24 at 11 10 57 AM" src="https://github.com/user-attachments/assets/a683184d-dfe7-4e97-a686-eda1689f3f52" />
+
+Because of this, I had to go through various write-ups for this particular CTF challenge, to get the following flag;
+
+<br/>
+<br/>
+
+The flag : picoCTF{beep_boop_im_in_space}
+
+
+
 
 
 
