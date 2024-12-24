@@ -49,6 +49,9 @@ The flag : picoCTF{7h3_p47h_70_5ucc355_e5a6fcbc}
 
 ## SOAP 
 
+On launching the instance, I got the link for the web portal.
+
+
 
 
 
