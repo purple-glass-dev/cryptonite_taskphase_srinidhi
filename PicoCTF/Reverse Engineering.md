@@ -61,7 +61,7 @@ main:
 	ret
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 7.5.0"
-	.section	.note.GNU-stack,"",@progbits
+	.section	.note.GNU-stack,"",@progbits 
 ```
 
 From this we can conclude that func1 is just a max function which is comapring the two arguments(2 integers given in  the challenge)
