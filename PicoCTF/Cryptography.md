@@ -1,3 +1,18 @@
+## Extra : Rotation
+This was a simple exercise, I figured that the encryption method is just a bunch of shifting and for this challenge, I used the same online decoder as I used for the miniRSA project(later).
+
+<img width="1432" alt="Screenshot 2024-12-25 at 6 22 40 PM" src="https://github.com/user-attachments/assets/cd8bc7d9-40a8-4f95-9758-98affab407a8" />
+
+Since there are multiple shifts possible, a lot ofpossibilities were listed but I found the flag in the second line.
+
+<br/>
+
+The flag: picoCTF{r0tat1on_d3crypt3d_555957f3}
+
+NOTE : The rotation pattern was [A-Z]+8.
+
+****
+
 ## Extra : ReadMyCert
 
 I began by knowing the contents of the file by catting the readmycert.csr file. And I got the following.
