@@ -3,7 +3,7 @@ This was a simple exercise, I figured that the encryption method is just a bunch
 
 <img width="1432" alt="Screenshot 2024-12-25 at 6 22 40 PM" src="https://github.com/user-attachments/assets/cd8bc7d9-40a8-4f95-9758-98affab407a8" />
 
-Since there are multiple shifts possible, a lot ofpossibilities were listed but I found the flag in the second line.
+Since there are multiple shifts possible, a lot of possibilities were listed but I found the flag in the second line.
 
 <br/>
 
