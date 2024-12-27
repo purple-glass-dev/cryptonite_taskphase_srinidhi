@@ -70,7 +70,7 @@ e454b20fdc2208f8170e28b90b6d43f7  usr/share/doc/steghide/changelog.Debian.gz
 df8c0ea893b3f6f64a917824c6c9d224  usr/share/doc/steghide/copyright
 fc53645374c583f11f628331be710d9a  usr/share/locale/de/LC_MESSAGES/steghide.mo
 b8ceabc96f9bffd9157103e1a86be33f  usr/share/locale/es/LC_MESSAGES/steghide.mo
-87ee9a19bb49b217dad67b5a889bb1d1  usr/share/locale/fr/LC_MESSAGES/steghide.mo
+87ee9a19bb49b217dad67b5a889bb1d1  usr/share/locale/fr/LC_MESSAGES/steghide.mo  
 dbc3a8e974ccf7e91da81aca4a5c1605  usr/share/locale/ro/LC_MESSAGES/steghide.mo
 921a5afd279097e4ed359ce3767068f5  usr/share/man/man1/steghide.1.gz
 ```
