@@ -11,7 +11,10 @@ The flag: picoCTF{r0tat1on_d3crypt3d_555957f3}
 
 NOTE : The rotation pattern was [A-Z]+8.
 
+<img width="365" alt="Screenshot 2025-01-12 at 10 56 37 AM" src="https://github.com/user-attachments/assets/7da76e15-cd39-4521-b83d-8811938c730e" />
+
 ****
+
 
 ## Extra : ReadMyCert
 
