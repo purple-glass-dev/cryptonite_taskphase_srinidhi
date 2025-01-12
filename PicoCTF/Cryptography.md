@@ -18,6 +18,8 @@ NOTE : The rotation pattern was [A-Z]+8.
 
 ## Extra : ReadMyCert
 
+CSR -- Certificate Signing Request
+
 I began by knowing the contents of the file by catting the readmycert.csr file. And I got the following.
 ```
 srinidhia@srinidhis-mbp Downloads % cat readmycert.csr
