@@ -116,7 +116,7 @@ func:
 	ldr	w1, [sp, 28] ; w1= 90
 	ldr	w0, [sp, 12] ;w0=68
 	sub	w0, w1, w0 ; w0=w1-w0 = 90-68 =22
-	str	w0, [sp, 28] ; storing 23 in [sp,28]
+	str	w0, [sp, 28] ; storing 22 in [sp,28]
 	ldr	w0, [sp, 28] ; w0=22
 	add	sp, sp, 32 
 	ret 
